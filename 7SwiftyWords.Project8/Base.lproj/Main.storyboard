@@ -38,10 +38,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJ5-GR-cH0">
                                 <rect key="frame" x="525" y="390" width="75" height="44"/>
                                 <state key="normal" title="CLEAR"/>
+                                <connections>
+                                    <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHX-wA-Vz0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwZ-QT-qG4">
                                 <rect key="frame" x="425" y="390" width="75" height="44"/>
                                 <state key="normal" title="SUBMIT"/>
+                                <connections>
+                                    <action selector="submitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="prl-BP-9V2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIh-RW-Nqh">
                                 <rect key="frame" x="200" y="470" width="120" height="60"/>
@@ -193,6 +199,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="answersLabel" destination="Mqt-zT-uzY" id="eTR-vL-TOR"/>
+                        <outlet property="cluesLabel" destination="z3f-7u-De4" id="bIZ-fK-C74"/>
+                        <outlet property="currentAnswer" destination="x4J-qX-Zg1" id="aQA-yd-xti"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
