@@ -87,6 +87,13 @@ class ViewController: UIViewController {
         }
     }
     
+    func letterTapped(btn: UIButton) {
+        
+        currentAnswer.text = currentAnswer.text! + btn.titleLabel!.text!
+        activatedButtons.append(btn)
+        btn.hidden = true
+    }
+    
     // Actions
 
     @IBAction func submitTapped(sender: AnyObject) {
