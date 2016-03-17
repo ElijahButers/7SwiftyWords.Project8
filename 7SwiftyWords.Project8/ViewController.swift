@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var letterButtons = [UIButton]()
+    var activatedButtons = [UIButton]()
+    var solutions = [String]()
+    
+    var score = 0
+    var level = 1
+    
     // Outlets
     @IBOutlet weak var cluesLabel: UILabel!
     @IBOutlet weak var answersLabel: UILabel!
