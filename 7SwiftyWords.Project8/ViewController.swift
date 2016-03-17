@@ -32,6 +32,8 @@ class ViewController: UIViewController {
             letterButtons.append(btn)
             btn.addTarget(self, action: "letterTapped:", forControlEvents: .TouchUpInside)
         }
+        
+        loadLevel()
     }
 
     override func didReceiveMemoryWarning() {
