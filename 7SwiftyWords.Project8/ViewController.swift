@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import GameplayKit
 class ViewController: UIViewController {
     
     var letterButtons = [UIButton]()
