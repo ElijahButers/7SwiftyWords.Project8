@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     
     func loadLevel() {
         
-        var clueString = ""
+        var cluesString = ""
         var solutionString = ""
         var letterBits = [String]()
         
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
                     let answer = parts[0]
                     let clue = parts[1]
                     
-                    clueString += "\(index + 1). \(clue)\n"
+                    cluesString += "\(index + 1). \(clue)\n"
                     
                     let solutionWord = answer.stringByReplacingOccurrencesOfString("|", withString: "")
                     solutionString += "\(solutionWord.characters.count) letters\n"
@@ -70,6 +70,19 @@ class ViewController: UIViewController {
         }
         
         // Configure the buttons and labels
+        
+        cluesLabel.text = cluesString.stringByTrimmingCharactersInSet(.whitespaceAndNewlineCharacterSet())
+        
+        answersLabel.text = solutionString.stringByTrimmingCharactersInSet(.whitespaceAndNewlineCharacterSet())
+        
+        letterBits = GKRandomSource.sharedRandom().arrayByShufflingObjectsInArray(letterBits) as! [String]
+        letterButtons = GKRandomSource.sharedRandom().arrayByShufflingObjectsInArray(letterButtons) as! [UIButton]
+        
+        if letterBits.count == letterButtons.count {
+            for i in 0 ..< letterBits.count {
+                letterButtons[i].setTitle(letterBits[i], forState: .Normal)
+            }
+        }
     }
     
     // Actions
