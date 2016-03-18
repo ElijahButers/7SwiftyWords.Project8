@@ -100,6 +100,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clearTapped(sender: AnyObject) {
+        
+        currentAnswer.text = ""
+        
+        for btn in activatedButtons {
+            btn.hidden = false
+        }
+        
+        activatedButtons.removeAll()
     }
 }
 
