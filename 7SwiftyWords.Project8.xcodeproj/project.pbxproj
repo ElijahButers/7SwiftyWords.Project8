@@ -12,6 +12,7 @@
 		E20236D01C9994B6001251B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20236CE1C9994B6001251B3 /* Main.storyboard */; };
 		E20236D21C9994B6001251B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E20236D11C9994B6001251B3 /* Assets.xcassets */; };
 		E20236D51C9994B6001251B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20236D31C9994B6001251B3 /* LaunchScreen.storyboard */; };
+		E203BBAE1C9C557E00BDF8ED /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = E203BBAD1C9C557E00BDF8ED /* level2.txt */; };
 		E20552E91C9AF3F5005C84A5 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = E20552E81C9AF3F5005C84A5 /* level1.txt */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		E20236D11C9994B6001251B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E20236D41C9994B6001251B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E20236D61C9994B6001251B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E203BBAD1C9C557E00BDF8ED /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 		E20552E81C9AF3F5005C84A5 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				E20236CE1C9994B6001251B3 /* Main.storyboard */,
 				E20236D11C9994B6001251B3 /* Assets.xcassets */,
 				E20552E81C9AF3F5005C84A5 /* level1.txt */,
+				E203BBAD1C9C557E00BDF8ED /* level2.txt */,
 				E20236D31C9994B6001251B3 /* LaunchScreen.storyboard */,
 				E20236D61C9994B6001251B3 /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E203BBAE1C9C557E00BDF8ED /* level2.txt in Resources */,
 				E20236D51C9994B6001251B3 /* LaunchScreen.storyboard in Resources */,
 				E20552E91C9AF3F5005C84A5 /* level1.txt in Resources */,
 				E20236D21C9994B6001251B3 /* Assets.xcassets in Resources */,
