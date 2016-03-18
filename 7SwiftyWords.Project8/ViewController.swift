@@ -14,13 +14,19 @@ class ViewController: UIViewController {
     var activatedButtons = [UIButton]()
     var solutions = [String]()
     
-    var score = 0
+    var score: Int = 0 {
+        didSet {
+            scoreLabel.text = "Score: \(score)"
+        }
+    }
+    
     var level = 1
     
     // Outlets
     @IBOutlet weak var cluesLabel: UILabel!
     @IBOutlet weak var answersLabel: UILabel!
     @IBOutlet weak var currentAnswer: UITextField!
+    @IBOutlet weak var scoreLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

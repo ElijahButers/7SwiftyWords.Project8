@@ -203,6 +203,7 @@
                         <outlet property="answersLabel" destination="Mqt-zT-uzY" id="eTR-vL-TOR"/>
                         <outlet property="cluesLabel" destination="z3f-7u-De4" id="bIZ-fK-C74"/>
                         <outlet property="currentAnswer" destination="x4J-qX-Zg1" id="aQA-yd-xti"/>
+                        <outlet property="scoreLabel" destination="XBN-hC-v9Z" id="gfe-PJ-X8c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
