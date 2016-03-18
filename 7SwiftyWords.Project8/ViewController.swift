@@ -94,6 +94,18 @@ class ViewController: UIViewController {
         btn.hidden = true
     }
     
+    func levelUp(action: UIAlertAction!) {
+        
+        level += 1
+        solutions.removeAll(keepCapacity: true)
+        
+        loadLevel()
+        
+        for btn in letterButtons {
+            btn.hidden = false
+        }
+    }
+    
     // Actions
 
     @IBAction func submitTapped(sender: AnyObject) {
